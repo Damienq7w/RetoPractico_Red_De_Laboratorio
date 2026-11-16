@@ -49,7 +49,7 @@ Representar la red del laboratorio como un **grafo dirigido con multilistas**, u
 
 | Integrante | Rol | A cargo de | Rama |
 |---|---|---|---|
-| Cunalata Mendoza Damian Alexander | Líder técnico e integración | Este README, estructura del repositorio, `docs/Respuestas_Parte3.md`, revisión e integración de las ramas en `main` y prueba final | `Rama-Damian` |
+| Cunalata Mendoza Damian Alexander | Líder técnico e integración | Este README, estructura del repositorio, `docs/Respuestas_Parte3.md`, revisión e integración de las ramas en `main` y prueba final | `Damian_Cunalata` |
 | Tisalema Guashco Darwin Joel | Desarrollo y pruebas | Paquete `modelo/` (`Vertice`, `Arista`), `pruebas/PruebasRed` y `docs/Pruebas.md` | `Rama-Joel` |
 | Silva Camuendo Luis Alexander | Desarrollo | `Grafo`: `agregarVertice`, `agregarArista`, `mostrar`, `totalVertices` y **`grado(id)`** | `Rama-Luis` |
 | Tacuri Santillan Mónica Sara | Desarrollo | `Grafo`: `actualizarPeso`, `eliminarArista`, `eliminarVertice`, `recorridoBfs`, `bfs` y `esConexo` | `Rama-Sara` |
@@ -197,7 +197,13 @@ PENDIENTE: pegar aquí el método `grado(id)` de `src/negocio/Grafo.java` con un
 
 **A cargo de:** Cunalata Mendoza Damian Alexander · Detalle en [docs/Respuestas_Parte3.md](docs/Respuestas_Parte3.md)
 
-PENDIENTE: equipos aislados, número mínimo de enlaces nuevos y comprobación.
+| Pregunta | Respuesta |
+|---|---|
+| `esConexo("Router")` tras eliminar el Switch | `false`: desde el Router solo se alcanzan 2 de 5 equipos (Router y Servidor) |
+| Equipos aislados | PC1, PC2 e Impresora |
+| Enlaces nuevos mínimos | 2: PC1 y PC2 quedaron sin enlaces de entrada y cada uno necesita uno; la Impresora se recupera por PC2 → Impresora |
+| Enlaces agregados | Router → PC1 (2) y Router → PC2 (2) |
+| Comprobación | `esConexo("Router")` devuelve `true`: alcanza 5 de 5 |
 
 ## Flujo de trabajo en Git
 
