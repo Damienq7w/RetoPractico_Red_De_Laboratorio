@@ -1,7 +1,7 @@
 # Tacuri Santillan Mónica Sara
 
 **Rol:** desarrollo
-**Rama:** `Rama-Sara`
+**Rama:** `Sara-Tacuri`
 **Archivo:** `src/negocio/Grafo.java` (segunda mitad)
 
 Empieza cuando la parte de Luis esté en `main`. Trabaja sobre el mismo archivo: agrega sus métodos después de `grado` sin borrar ni modificar los de Luis. Josue y Joel esperan esta parte para el `Main` y las pruebas.

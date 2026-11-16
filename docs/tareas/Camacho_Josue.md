@@ -1,7 +1,7 @@
 # Camacho Monta Josue Jampier
 
 **Rol:** desarrollo y documentación
-**Rama:** `Rama-Josue`
+**Rama:** `Josue-Camacho`
 **Archivos:** `src/app/Main.java`, `docs/capturas/`
 
 Tiene dos entregas: el `Main` cuando el `Grafo` esté completo y las capturas cuando también estén las pruebas.

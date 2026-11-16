@@ -1,7 +1,7 @@
 # Silva Camuendo Luis Alexander
 
 **Rol:** desarrollo
-**Rama:** `Rama-Luis`
+**Rama:** `Luis-Silva`
 **Archivo:** `src/negocio/Grafo.java` (primera mitad)
 
 Empieza cuando la entrega 1 de Joel (`Vertice` y `Arista`) esté en `main`. Sara trabaja después en el mismo archivo, así que no puede empezar hasta que esta parte esté fusionada.

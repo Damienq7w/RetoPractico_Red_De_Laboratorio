@@ -6,9 +6,9 @@ Cada integrante tiene su archivo con lo que le corresponde: archivos, métodos, 
 |---|---|---|
 | Cunalata Mendoza Damian Alexander | [Cunalata_Damian.md](Cunalata_Damian.md) | `Damian_Cunalata` |
 | Tisalema Guashco Darwin Joel | [Tisalema_Joel.md](Tisalema_Joel.md) | `Rama-Joel` |
-| Silva Camuendo Luis Alexander | [Silva_Luis.md](Silva_Luis.md) | `Rama-Luis` |
-| Tacuri Santillan Mónica Sara | [Tacuri_Sara.md](Tacuri_Sara.md) | `Rama-Sara` |
-| Camacho Monta Josue Jampier | [Camacho_Josue.md](Camacho_Josue.md) | `Rama-Josue` |
+| Silva Camuendo Luis Alexander | [Silva_Luis.md](Silva_Luis.md) | `Luis-Silva` |
+| Tacuri Santillan Mónica Sara | [Tacuri_Sara.md](Tacuri_Sara.md) | `Sara-Tacuri` |
+| Camacho Monta Josue Jampier | [Camacho_Josue.md](Camacho_Josue.md) | `Josue-Camacho` |
 
 Chalco Tasna Kenneth Mateo no tiene tareas asignadas porque no asistió a clases.
 
