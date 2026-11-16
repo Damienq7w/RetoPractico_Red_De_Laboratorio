@@ -1,12 +1,27 @@
-# Capturas de la consola
+# Capturas de la ejecución
 
-**A cargo de:** Camacho Monta Josue Jampier
+Evidencias del reto **La red del laboratorio**.
 
-PENDIENTE: subir a esta carpeta las cuatro capturas con estos nombres exactos.
+## Parte 1. Construir
 
-| Archivo | Qué debe verse |
-|---|---|
-| `01_construir.png` | Parte 1: `mostrar()` y los dos `false` |
-| `02_consultar.png` | Parte 2: BFS, grados, cambio de latencia y enlace eliminado |
-| `03_decidir.png` | Parte 3: `esConexo` en `false`, los dos enlaces nuevos y `esConexo` en `true` |
-| `04_pruebas.png` | Final de `PruebasRed` con `21/21 pruebas OK` |
+Se muestra la red inicial con seis equipos y sus enlaces. Agregar el Router por segunda vez y crear el enlace de PC1 a Proyector devuelven `false`.
+
+![Red inicial y validación de equipos y enlaces](01_construir.png)
+
+## Parte 2. Consultar
+
+El recorrido BFS desde el Router alcanza los seis equipos. Se consultan los grados de salida, se cambia a 2 ms la latencia del enlace de Router a Servidor y se elimina el enlace de Servidor a PC2.
+
+![Recorrido BFS, grados y cambios de enlaces](02_consultar.png)
+
+## Parte 3. Decidir
+
+Tras eliminar el Switch, el Router solo alcanza a 2 de los 5 equipos restantes. Con el enlace de Router a PC1 todavía quedan equipos fuera de alcance. Al agregar también el enlace de Router a PC2, se vuelve a alcanzar a los cinco equipos.
+
+![Conectividad antes y después de agregar dos enlaces](03_decidir.png)
+
+## Pruebas de la red
+
+La ejecución de `PruebasRed.java` verifica 21 casos de inserción, consulta, modificación, eliminación y conectividad.
+
+![Resultado de las 21 pruebas de la red](04_pruebas.png)
