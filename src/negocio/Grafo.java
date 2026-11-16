@@ -206,4 +206,49 @@ public class Grafo {
         int alcanzados = 0;
         while (frente != null) {
             Vertice actual = frente;
-            frente = frente.getSigCola()
+            frente = frente.getSigCola();
+            if (frente == null) {
+                fondo = null;
+            }
+
+            if (orden != null) {
+                if (alcanzados > 0) {
+                    orden.append(" ");
+                }
+                orden.append(actual.getId());
+            }
+            alcanzados++;
+
+            Arista arista = actual.getPrimeraArista();
+            while (arista != null) {
+                Vertice destino = arista.getDestino();
+                if (!destino.isVisitado()) {
+                    destino.setVisitado(true);
+                    if (fondo == null) {
+                        frente = destino;
+                    } else {
+                        fondo.setSigCola(destino);
+                    }
+                    fondo = destino;
+                }
+                arista = arista.getSiguiente();
+            }
+        }
+        return alcanzados;
+    }
+
+    public String recorridoBfs(String inicio) {
+        StringBuilder orden = new StringBuilder();
+        recorrer(inicio, orden);
+        return orden.toString();
+    }
+
+    public int bfs(String inicio) {
+        return recorrer(inicio, null);
+    }
+
+    public boolean esConexo(String inicio) {
+        int alcanzados = bfs(inicio);
+        return alcanzados > 0 && alcanzados == totalVertices();
+    }
+}
