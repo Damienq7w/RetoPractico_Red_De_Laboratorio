@@ -94,6 +94,22 @@ public class Grafo {
         return total;
     }
 
+    // Cuenta los enlaces que salen del equipo.
+    // -1 si el equipo no existe. O(V + grado)
+    public int grado(String id) {
+        Vertice v = buscar(id);
+        if (v == null) {
+            return -1;
+        }
+        int grado = 0;
+        Arista a = v.getPrimeraArista();
+        while (a != null) {
+            grado++;
+            a = a.getSiguiente();
+        }
+        return grado;
+    }
+
     // ===== ACTUALIZAR, ELIMINAR Y RECORRER =====
     // A cargo de: Tacuri Santillan Monica Sara
     // PENDIENTE: actualizarPeso, eliminarArista, eliminarVertice, recorridoBfs, bfs y esConexo
